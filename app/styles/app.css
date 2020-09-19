@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+
+*{
+    font-family: 'ABeeZee', sans-serif;
+    
+}
+
+.header{
+    background: rgb(246, 46, 123);
+    position: fixed;
+
+    
+}
+
+.brand-logo{
+    font-family: 'ZCOOL XiaoWei', serif;
+     
+            }
+
+.itemimg{
+    width: 100%;
+    height: 100%;
+    }
+
+.contact{
+
+    font-family: 'Spartan', sans-serif;
+}
+
+.phone-no{
+font-family: 'Spartan', sans-serif;
+
+}
+.address{
+font-family: 'Spartan', sans-serif;
+
+}
+
+.footer-copyright{font-family: 'Spartan', sans-serif;}
+
+.search-item{
+    
+ 
+    padding-left: 15%;
+    padding-right: 20%;
+    border-radius: 10px;
+    padding-top: 2px;
+    margin-bottom: 30px;
+ border:1px solid rgb(184, 182, 182);
+ background-color: rgb(238, 238, 238);
+ justify-items: center;
+ resize: horizontal;
+
+    
+
+}
+
+

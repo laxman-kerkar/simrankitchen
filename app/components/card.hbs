@@ -1,0 +1,21 @@
+<div class="container-fluid col-md-4 col-12 mt-3 mx-auto Cardcomp">
+<div class="card shadow">
+    <div class="row">
+
+    <div class="col-6">
+        <img src={{@product.image}} class="card-img-top itemimg" alt={{@product.name_id}}/>
+        </div>
+                <div class="card-body col-6">
+                    <h2>{{@product.name_id}}</h2>
+                        <span>₹</span>{{@product.price}}
+                        
+                        <div class="row">
+                        <button class="btn btn-info buttons mt-3 "
+                        {{action 'addToCart'}}>add</button>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+
+
