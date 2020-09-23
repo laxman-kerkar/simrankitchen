@@ -14,35 +14,22 @@ import {tracked} from '@glimmer/tracking';
         this.image =image;
         this.price= price;
         this.count = count;
-
-
-
     }
-
-
- }
+}
 
 export default class CartService extends Service {
     @tracked cartList = [];
     
     add(item)
     {
-        const existingItem = this.cartList.find(CartItem=>{return CartItem.id=item.id});
-
-        if(existingItem)
-        {
-            existingItem.count+= 1;
-
-        }
-        else
-        {
+    
             this.cartList=[...this.cartList,new CartItem(
                 item.id,
                 item.name_id,
                 item.image,
                 item.price,
             )];
-        }
+
 
     }
 

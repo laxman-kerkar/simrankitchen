@@ -21,6 +21,11 @@
                 d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z" />
         </svg>
             <span>Cart</span>
+            {{#if this.cart.cartList.length}}
+            <span class="home-cart-count d-inline-flex justify-content-center align-items-center">
+            {{this.cart.cartList.length}}
+            </span>
+            {{/if}}
         </LinkTo>
         </div>
         
