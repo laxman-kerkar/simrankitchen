@@ -1,17 +1,17 @@
-<div class="container-fluid col-md-4 col-12 mt-3 mx-auto Cardcomp">
+<div class="container-fluid col-md-4 col-12 mt-3 mx-auto cardComp">
 <div class="card shadow">
     <div class="row">
 
     <div class="col-6">
-        <img src={{@product.image}} class="card-img-top itemimg" alt={{@product.name_id}}/>
+        <img src={{@product.image}} class="card-img-top item-image" alt={{@product.name_id}}/>
         </div>
                 <div class="card-body col-6">
-                    <h2>{{@product.name_id}}</h2>
+                    <h3><span>{{@product.name_id}}</span></h3>
                         <span>₹</span>{{@product.price}}
                         
                         <div class="row">
                         <button class="btn btn-info buttons mt-3 "
-                        {{action 'addToCart'}}>add</button>
+                        {{on 'click' this.addToCart}} >add</button>
                         </div>
                         </div>
                 </div>

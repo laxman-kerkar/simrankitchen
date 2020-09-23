@@ -1,0 +1,18 @@
+<div class="container-fluid col-md-4 col-12 mt-3 mx-auto cardComp">
+    <div class="card shadow">
+        <div class="row">
+
+            <div class="col-6">
+                <img src={{@product.image}} class="card-img-top item-img" alt={{@product.name_id}} />
+            </div>
+            <div class="card-body col-6">
+                <h3><span>{{@product.name_id}}</span></h3>
+                <span>₹</span>{{@product.price}}
+
+                <div class="row">
+                    <button class="btn btn-info buttons mt-3 " {{on 'click' (fn this.removeItem item)}}>remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

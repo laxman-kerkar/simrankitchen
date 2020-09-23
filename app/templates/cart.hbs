@@ -1,6 +1,6 @@
-<ul>
-    <h3>this are cart items</h3>
-    {{#each this.items as |item|}}
-    <CartItems @item={{item}}/>
-    {{/each}}
-</ul>
+<h2 class="col-10 col-md-10">cart</h2>
+{{#each cart.cartList as |item|}}
+<li><Item @product={{item}} /></li>
+{{/each}}
+
+
